@@ -1,12 +1,43 @@
-# React + Vite
+# 🧠 Real-Time Collaborative Task Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Real-Time Collaborative Task Board is a modern, interactive web application designed for teams to plan, organize, and collaborate on tasks in real time. Built using React, Vite, Redux Toolkit, Socket.IO, and React-Beautiful-DnD, it brings the Trello-like experience with real-time multi-user synchronization.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔄 Real-time sync between clients via Socket.IO
+- 🧲 Drag and drop tasks & columns
+- 👥 User presence indicator
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+##  Setup & Run Instructions
+
+###  Prerequisites
+
+- Node.js `>=18.x`
+- npm `>=9.x`
+
+---
+
+### Run Backend (Socket.IO server)
+- cd server
+- npm install
+- node index.js
+  
+---
+
+### Run Frontend (React + Vite)
+- npm run dev
+
+---
+## Real-Time Architecture & Data Flow
+### State Flow
+- Redux Toolkit holds the board state
+- Socket.IO syncs state changes across clients
+- React-Beautiful-DnD manages drag interactions
+
+## Deployments
+- Frontend: https://real-time-task-board-stvl.vercel.app/ (Vercel)
+- Backend: https://realtime-taskboard-backend.onrender.com/ (Render)
